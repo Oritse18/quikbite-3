@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log-in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../quikbite preview/main.css">
+</head>
+<style>
+    .eye {
+    position: relative;
+    bottom: -12px;
+    float: right;
+    right: 3rem;
+    cursor: pointer;
+}
+</style>
+<body>
+
+    <!-- <header>
+        <a href="#"><img src="../../quikbite preview/img/logo.svg.png" alt="" class="logo"></a>
+
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="../../quikbite preview/index.html" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="../../quikbite preview/index.html#menu">Menu</a>
+            <a href="#">Reviews</a>
+            <a href="./contact.html" target="_blank">Contact</a>
+        </div>
+
+        <div class="cta-btn">
+            <a href="#" target="_blank" class="cta1"><i class="fa-solid fa-user"></i></i>Log in</a>
+            <a href="./sign-up.html" target="_blank" class="cta">Sign up</a>
+        </div>
+
+        <div class="btn">
+            <i class="fa-solid fa-bars menu-btn"></i>
+        </div>
+    </header> -->
+
+    <div class="body">
+        <div class="form-container">
+            <div class="form-img">
+                <img src="./img/Rectangle 4640.png" alt="">
+            </div>
+            <form action="post" class="login-form">
+                <h2>Welcome Back!</h2>
+                <p class="get">Place more orders</p>
+
+                <div class="imput">
+                    <p>Email</p>
+                    <input type="email" placeholder="Enter your email" class="text">
+
+                    <p>Password</p>
+                    <input type="password" placeholder="Your password" class="text">
+                    <div class="eye">
+                        <img id="icon" src="./img/Eyes closed.png" alt="">
+                    </div>
+                </div>
+                <div class="more-imput">
+                    <div class="forgot-remember"><input type="checkbox" name="remember-me" id="checkbox"
+                            class="checkbox" style="width: 20px;height: 20px;margin-right: 5px;margin-top: -22px;">
+                        <p>Remember me</p>
+                    </div>
+
+                    <p><a style="color: green;" href=""> Forgot password?</a></p>
+                </div>
+                <button type="submit">
+                    <a href="../../index.html" style="margin-bottom: 0;">Sign In</a>
+                </button>
+
+                <!-- <div class="lines">
+                    <div class="line"></div>
+                    <p>OR</p>
+                    <div class="line"></div>
+                </div>
+
+                <div class="logo-icon">
+                    <div class="google logo"><img src="./img/1298745_google_brand_branding_logo_network_icon.svg" alt=""></div>
+                    <div class="facebook logo"><img src="./img/facebook-2870.svg" alt=""></div>
+                    <div class="apple logo"><img src="./img/4691384_apple_icon.svg" alt=""></div>
+                </div> -->
+
+                <div class="more-imput">
+                    <div class="forgot-remember">
+                        <p>New to Quikbite?</p>
+                    </div>
+
+                    <p><a style="color: green;" href="./sign-up.html"> Create an account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get a reference to the image element
+            const imgElement = document.getElementById("icon");
+
+            // Define an array of image file names to toggle between
+            const imageFileNames = ['Eye opened.png' , "Eyes closed.png"];
+
+            // Initialize an index to keep track of the current image
+            let currentImageIndex = 0;
+
+            // Function to change the image when it is clicked
+            function changeImage() {
+                // Update the image source to the next one in the array
+                currentImageIndex = (currentImageIndex + 1) % imageFileNames.length;
+                const imagePath = "./img/" + imageFileNames[currentImageIndex];
+                imgElement.src = imagePath;
+            }
+
+            // Attach a click event listener to the image
+            imgElement.addEventListener("click", changeImage);
+        });
+
+    </script>
+</body>
+
+</html>

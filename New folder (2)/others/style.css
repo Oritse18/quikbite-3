@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease;
+}
+body{
+    font-family: poppins;
+}
+a{
+    text-decoration: none;
+}
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    background-size: cover;
+}
+
+.form-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.form-img {
+    
+}
+
+.form-img img {
+    width: 450px;
+}
+
+.login-form {
+    float: right;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.text {
+    width: 300px;
+}
+
+.more-imput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-imput p {
+    /* width: 10px;
+    height: 10px; */
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 33px;
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
+.get {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.forgot-remember {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    text-align: center;
+    width: 100%;
+    /* padding: 20px; */
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: white;
+    background: green;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgba(0, 128, 0, 0.805);
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.lines {
+    display: flex;
+    align-items: center;
+}
+
+.lines .line {
+    width: 50%;
+    background: black;
+    height: 1px;
+}
+
+.lines p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0px 10px 0px 10px;
+}
+
+.imput p {
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.imput input {
+    width: 100%;
+    background: #D9D9D9;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 44px;
+    width: 359px;
+    color: #676767;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px 0;
+
+}
+
+.logo-icon img {
+    width: 30px;
+}
+
+.logo {
+    border: black 1.4px solid;
+    padding: 10px 40px;
+    border-radius: 10px;
+display: flex;
+}.eye{
+    position: relative;
+    bottom: -20px;
+    float: right;
+    right: 4rem;
+    cursor: pointer;
+}.eye img{width: 25px;}
+
+@media screen and (max-width:1111px) {
+    .form-img {
+        display: none;
+    }
+}
+@media screen and (max-width:767px) {
+    .login-form{
+        width: 80%;
+    }
+    .form-container{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigh-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="form-container">
+            <div class="form-img">
+                <img src="./img/sign up img.jpg" alt="">
+            </div>
+            <form action="post" class="login-form">
+                <h2>Create an account</h2>
+                <p class="get">Provide your details</p>
+
+                <div class="imput">
+                    <p>Your name</p>
+                    <input type="text" placeholder="Full name" class="text">
+
+                    <p>Email</p>
+                    <input type="email" placeholder="Example@gmail.com" class="text">
+
+
+                    <p>Password</p>
+                    <input type="password" placeholder="By,you02" class="text">
+                    <div class="eye">
+                        <img id="icon" src="./img/Eye opened.png" alt="">
+                    </div>
+                </div>
+
+                <div class="more-imput">
+                    <!-- <div class="forgot-remember">
+                        <p>New to Quickbite?</p>
+                    </div> -->
+
+                    <p>By signing up i agree to the<a style="color: green;" href=""> terms & conditions</a> and <a
+                            style="color: green;" href=""><br> privacy policy</a></p>
+                </div>
+                <!-- <div class="more-imput">
+                    <div class="forgot-remember"><input type="checkbox" name="remember-me" id="checkbox"
+                            class="checkbox" style="width: 20px;height: 20px;margin-right: 5px;margin-top: -22px;">
+                        <p>Remember me</p>
+                    </div>
+
+                    <p><a  style="color: green;" href=""> Forgot password?</a></p>
+                </div> -->
+                <button type="submit">
+                    <p style="margin-bottom: 0;">Create An Account</p>
+                </button>
+<!-- 
+                <div class="lines">
+                    <div class="line"></div>
+                    <p>OR</p>
+                    <div class="line"></div>
+                </div>
+
+                <div class="logo-icon">
+                    <div class="google logo"><img src="./img/1298745_google_brand_branding_logo_network_icon.svg"
+                            alt=""></div>
+                    <div class="facebook logo"><img src="./img/facebook-2870.svg" alt=""></div>
+                    <div class="apple logo"><img src="./img/4691384_apple_icon.svg" alt=""></div>
+                </div> -->
+
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get a reference to the image element
+            const imgElement = document.getElementById("icon");
+
+            // Define an array of image file names to toggle between
+            const imageFileNames = ["Eyes closed.png", 'Eye opened.png'];
+
+            // Initialize an index to keep track of the current image
+            let currentImageIndex = 0;
+
+            // Function to change the image when it is clicked
+            function changeImage() {
+                // Update the image source to the next one in the array
+                currentImageIndex = (currentImageIndex + 1) % imageFileNames.length;
+                const imagePath = "./img/" + imageFileNames[currentImageIndex];
+                imgElement.src = imagePath;
+            }
+
+            // Attach a click event listener to the image
+            imgElement.addEventListener("click", changeImage);
+        });
+
+    </script>
+</body>
+
+</html>
